@@ -22,5 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Route::resource('review',ReviewController::class);
 Route::get('review/{wisata}/',[ReviewController::class,'index']);
-Route::resource('wisata',WisataController::class)->only(['store','index']);
+Route::resource('wisata',WisataController::class)->only(['index']);
 // Route::resource('review',ReviewController::class)->only(['store']);
