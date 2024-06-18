@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #135d66;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #135d66;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+nav .navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 50px;
+}
+
+.navbar .logo a {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav .navbar .nav-links {
+  line-height: 70px;
+  height: 100%;
+}
+
+nav .navbar .links {
+  display: flex;
+}
+
+nav .navbar .links li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+
+nav .navbar .links li a {
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow {
+  transform: rotate(180deg);
+}
+
+nav .navbar .links li .arrow {
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+nav .navbar .links li .sub-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  background: #2eb5e2;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu {
+  display: block;
+}
+
+.navbar .links li .sub-menu li {
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .links li .sub-menu a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar .links li .sub-menu .more-arrow {
+  line-height: 40px;
+}
+
+.navbar .links li .htmlCss-more-sub-menu {
+  /* line-height: 40px; */
+}
+
+.navbar .links li .sub-menu .more-sub-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+  z-index: 1;
+  display: none;
+}
+
+.links li .sub-menu .more:hover .more-sub-menu {
+  display: block;
+}
+
+.navbar .nav-links .sidebar-logo {
+  display: none;
+}
+
+.navbar .bx-menu {
+  display: none;
+}
+
+.navbar i{
+  cursor: pointer;
+}
+
+.map-container{
+  margin-top: 120px;
+}
+
+.map-item img{
+    margin-top: 85px;
+}
+
+.map-content {
+  border-color: black;
+  margin-left: 175px;
+  margin-top: 20px;
+}
+
+.map-background img {
+  width: 700px;
+}
+
+.map-item #satu {
+  position: absolute;
+  top: 447px; /* 281.4 * 1.75 */
+  left: 197px; /* 184.3 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 100px; /* 57.1 * 1.75 */
+}
+.map-item #satu:hover {
+  transform: scale(1.1);
+}
+.map-item #dua {
+  position: absolute;
+  top: 325.95px; /* 211.4 * 1.75 */
+  left: 515.5px; /* 370 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 237.475px; /* 135.7 * 1.75 */
+}
+.map-item #dua:hover {
+  transform: scale(1.1);
+}
+.map-item #tiga {
+  position: absolute;
+  top: 100px; /* 82.9 * 1.75 */
+  left: 733px; /* 488.6 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 124.95px; /* 71.4 * 1.75 */
+}
+.map-item #tiga:hover {
+  transform: scale(1.1);
+}
+.map-item #empat {
+  position: absolute;
+  top: 170px; /* 122.9 * 1.75 */
+  left: 696px; /* 468.6 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 124.95px; /* 71.4 * 1.75 */
+}
+.map-item #empat:hover {
+  transform: scale(1.1);
+}
+.map-item #lima {
+  position: absolute;
+  top: 120px; /* 94.3 * 1.75 */
+  left: 660px; /* 445.7 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 44.975px; /* 25.7 * 1.75 */
+}
+.map-item #lima:hover {
+  transform: scale(1.1);
+}
+.map-item #enam {
+  position: absolute;
+  top: 160px; /* 117.1 * 1.75 */
+  left: 638px; /* 437.1 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 44.975px; /* 25.7 * 1.75 */
+}
+.map-item #enam:hover {
+  transform: scale(1.1);
+}
+.map-item #tujuh {
+  position: absolute;
+  top: 225px; /* 152.9 * 1.75 */
+  left: 650px; /* 442.9 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 150px; /* 85.7 * 1.75 */
+}
+.map-item #tujuh:hover {
+  transform: scale(1.1);
+}
+.map-item #delapan {
+  position: absolute;
+  top: 225px; /* 154.3 * 1.75 */
+  left: 625px; /* 427.1 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 62.475px; /* 35.7 * 1.75 */
+}
+.map-item #delapan:hover {
+  transform: scale(1.1);
+}
+.map-item #sembilan {
+  position: absolute;
+  top: 182px; /* 130 * 1.75 */
+  left: 617px; /* 424.3 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 32.55px; /* 18.6 * 1.75 */
+}
+.map-item #sembilan:hover {
+  transform: scale(1.1);
+}
+.map-item #sepuluh {
+  position: absolute;
+  top:200px; /* 140 * 1.75 */
+  left: 577px; /* 401.4 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 29.925px; /* 17.1 * 1.75 */
+}
+.map-item #sepuluh:hover {
+  transform: scale(1.1);
+}
+.map-item #sebelas {
+  position: absolute;
+  top: 100px; /* 82.9 * 1.75 */
+  left: 555px; /* 388.6 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 80px; /* 45.7 * 1.75 */
+}
+.map-item #sebelas:hover {
+  transform: scale(1.1);
+}
+.map-item #duabelas {
+  position: absolute;
+  top: 146px; /* 108.6 * 1.75 */
+  left: 560px; /* 392.1 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 67.55px; /* 38.6 * 1.75 */
+}
+.map-item #duabelas:hover {
+  transform: scale(1.1);
+}
+.map-item #tigabelas {
+  position: absolute;
+  top: 180px; /* 127.1 * 1.75 */
+  left: 556px; /* 386.4 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 37.45px; /* 21.4 * 1.75 */
+}
+.map-item #tigabelas:hover {
+  transform: scale(1.1);
+}
+.map-item #empatbelas {
+  position:   absolute;
+  top: 125px; /* 96.7 * 1.75 */
+  left: 510px; /* 364.3 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 37.45px; /* 21.4 * 1.75 */
+}
+.map-item #empatbelas:hover {
+  transform: scale(1.1);
+}
+.map-item #limabelas {
+  position: absolute;
+  top: 70px; /* 63.9 * 1.75 */
+  left: 468px; /* 339.3 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 70px; /* 40 * 1.75 */
+}
+.map-item #limabelas:hover {
+  transform: scale(1.1);
+}
+.map-item #enambelas {
+  position: absolute;
+  top: 88px; /* 75.3 * 1.75 */
+  left: 387px; /* 295 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 75.075px; /* 42.9 * 1.75 */
+}
+.map-item #enambelas:hover {
+  transform: scale(1.1);
+}
+.map-item #tujuhbelas {
+  position: absolute;
+  top: 90px; /* 78.1 * 1.75 */
+  left: 340px; /* 266.4 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 87.5px; /* 50 * 1.75 */
+}
+.map-item #tujuhbelas:hover {
+  transform: scale(1.1);
+}
+.map-item #delapanbelas {
+  position: absolute;
+  top: 90px; /* 78.1 * 1.75 */
+  left: 269px; /* 223.6 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 77.525px; /* 44.3 * 1.75 */
+}
+.map-item #delapanbelas:hover {
+  transform: scale(1.1);
+}
+.map-item #sembilanbelas {
+  position: absolute;
+  top: 242px; /* 67 * 1.75 */
+  left: 232px; /* 233.2 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 47.425px; /* 27.1 * 1.75 */
+}
+.map-item #sembilanbelas:hover {
+  transform: scale(1.1);
+}
+.map-item #duapuluh {
+  position: absolute;
+  top: 207px; /* 68.4 * 1.75 */
+  left: 315px; /* 193.3 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 37.45px; /* 21.4 * 1.75 */
+}
+.map-item #duapuluh:hover {
+  transform: scale(1.1);
+}
+.map-item #duasatu {
+  position: absolute;
+  top: 250px; /* 85.7 * 1.75 */
+  left: 290px; /* 128.6 * 1.75 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 87.5px; /* 50 * 1.75 */
+}
+.map-item #duasatu:hover {
+  transform: scale(1.1);
+}
+.map-item #duadua {
+  position: absolute;
+  top: 292px; /* 1307 * 0.142857 */
+  left: 234px; /* 1400 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 40px; /* 250 * 0.142857 */
+}
+.map-item #duadua:hover {
+  transform: scale(1.1);
+}
+.map-item #duatiga {
+  position: absolute;
+  top: 320px; /* 1367 * 0.142857 */
+  left: 269px; /* 1530 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 41.4px; /* 290 * 0.142857 */
+}
+.map-item #duatiga:hover {
+  transform: scale(1.1);
+}
+.map-item #duaempat {
+  position: absolute;
+  top: 325px; /* 1387 * 0.142857 */
+  left: 332px; /* 1760 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 41.4px; /* 290 * 0.142857 */
+}
+.map-item #duaempat:hover {
+  transform: scale(1.1);
+}
+.map-item #dualima {
+  position: absolute;
+  top: 280px; /* 1257 * 0.142857 */
+  left: 403px; /* 2070 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 27.1px; /* 190 * 0.142857 */
+}
+.map-item #dualima:hover {
+  transform: scale(1.1);
+}
+.map-item #duaenam {
+  position: absolute;
+  top: 325px; /* 1400 * 0.142857 */
+  left: 393px; /* 1990 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 52.9px; /* 370 * 0.142857 */
+}
+.map-item #duaenam:hover {
+  transform: scale(1.1);
+}
+.map-item #duatujuh {
+  position: absolute;
+  top: 350px; /* 1500 * 0.142857 */
+  left: 460px; /* 2270 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 42.9px; /* 300 * 0.142857 */
+}
+.map-item #duatujuh:hover {
+  transform: scale(1.1);
+}
+.map-item #duadelapan {
+  position: absolute;
+  top: 223px; /* 1060 * 0.142857 */
+  left: 531px; /* 2590 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 22.9px; /* 160 * 0.142857 */
+}
+.map-item #duadelapan:hover {
+  transform: scale(1.1);
+}
+.map-item #duasembilan {
+  position: absolute;
+  top: 245px; /* 1090 * 0.142857 */
+  left: 461px; /* 2340 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 25px; /* 160 * 0.142857 */
+}
+.map-item #duasembilan:hover {
+  transform: scale(1.1);
+}
+.map-item #tigapuluh {
+  position: absolute;
+  top: 250px; /* 1170 * 0.142857 */
+  left: 500px; /* 2600 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 56px; /* 260 * 0.142857 */
+}
+.map-item #tigapuluh:hover {
+  transform: scale(1.1);
+}
+.map-item #tigasatu {
+  position: absolute;
+  top: 300px; /* 1330 * 0.142857 */
+  left: 490px; /* 2430 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 43.1px; /* 260 * 0.142857 */
+}
+.map-item #tigasatu:hover {
+  transform: scale(1.1);
+}
+.map-item #tigadua {
+  position: absolute;
+  top: 260px; /* 1190 * 0.142857 */
+  left: 574px; /* 2760 * 0.142857 */
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 47.1px; /* 260 * 0.142857 */
+}
+.map-item #tigadua:hover {
+  transform: scale(1.1);
+}
+
+
+.map-card {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  top: 150px;
+  left: 950px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#map-name {
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#map-description{
+
+ margin-top: 30px; 
+}
+
+#map-image{
+  border-radius: 10px;
+}
+
+@media (max-width: 920px) {
+  nav .navbar {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  nav .navbar .logo a {
+    font-size: 27px;
+  }
+
+  nav .navbar .links li {
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+
+  nav .navbar .links li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    /* position: relative; */
+  }
+
+  .navbar .bx-menu {
+    display: block;
+  }
+
+  nav .navbar .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    background: #3e8da8;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+
+  .navbar .nav-links .sidebar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-logo .logo-name {
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .sidebar-logo i,
+  .navbar .bx-menu {
+    font-size: 25px;
+    color: #fff;
+  }
+
+  nav .navbar .links {
+    display: block;
+    margin-top: 20px;
+  }
+
+  nav .navbar .links li .arrow {
+    line-height: 40px;
+  }
+
+  nav .navbar .links li {
+    display: block;
+  }
+
+  nav .navbar .links li .sub-menu {
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    display: none;
+  }
+
+  nav .navbar .links li .sub-menu li {
+    border-bottom: none;
+  }
+
+  .navbar .links li .sub-menu .more-sub-menu {
+    display: none;
+    position: relative;
+    left: 0;
+  }
+
+  .navbar .links li .sub-menu .more-sub-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .links li:hover .htmlcss-arrow,
+  .links li:hover .js-arrow {
+    transform: rotate(0deg);
+  }
+
+  .navbar .links li .sub-menu .more-sub-menu {
+    display: none;
+  }
+
+  .navbar .links li .sub-menu .more span {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .links li .sub-menu .more:hover .more-sub-menu {
+    display: none;
+  }
+
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu {
+    display: none;
+  }
+
+  .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+  .navbar .nav-links.show3 .links .js-sub-menu,
+  .navbar .nav-links.show2 .links .more .more-sub-menu {
+    display: block;
+  }
+
+  .navbar .nav-links.show1 .links .htmlcss-arrow,
+  .navbar .nav-links.show3 .links .js-arrow {
+    transform: rotate(180deg);
+  }
+
+  .navbar .nav-links.show2 .links .more-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 370px) {
+  nav .navbar .nav-links {
+    max-width: 100%;
+  }
+
+  
+}

@@ -34,7 +34,7 @@ class WisataController extends Controller
     {
         $request = $request->validated();
         Wisata::create($request);
-        return $this->successResponse("Data wisata telah disimpan");
+        return redirect()->back();
     }
 
     /**
@@ -42,7 +42,7 @@ class WisataController extends Controller
      */
     public function show(Wisata $wisata)
     {
-        //
+        
     }
 
     /**

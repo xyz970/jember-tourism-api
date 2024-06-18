@@ -23,7 +23,7 @@ class ReviewWisataRequest extends FormRequest
     {
         return [
             'wisata_id'=>'required',
-            'rating'=>'required|integer|between:1,10',
+            'rating'=>'required|integer|between:1,5',
             'user_name'=>'required',
             'review'=>'required',
         ];
