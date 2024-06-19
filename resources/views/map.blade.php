@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="dicoding:email" content="luthfit64@gmail.com">
 
   <title>JemberTourism</title>
   <link rel="icon" href="public/favicon.png" type="image/x-icon">

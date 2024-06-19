@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta name="dicoding:email" content="luthfit64@gmail.com">
   <title>JemberTourism</title>
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
   <link rel="icon" href="{{asset('favicon.png')}}" type="image/x-icon">
@@ -59,7 +59,7 @@
   <section class="bg-cover bg-center flex flex-col md:flex-row items-center justify-center p-6"
     style="background: url('{{asset("images/background-mini.svg")}}');">
     <div class="md:w-1/2 max-w-md lg:max-w-lg xl:max-w-2xl text-center md:text-left m-3 text-white space-y-4">
-      <p class="text-lg font-semibold">Destinasi terbaik di sekitar bali !</p>
+      <p class="text-lg font-semibold">Destinasi terbaik di sekitar Jember !</p>
       <h1 class="text-3xl md:text-4xl font-bold">Checklist impian, lengkapi destinasi yang pernah dikunjungi</h1>
       <button id="goToMap"
         class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">Coba
